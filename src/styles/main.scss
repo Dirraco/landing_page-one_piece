@@ -1,28 +1,36 @@
+@use 'variaveis';
 @use 'hero';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$corDeFundo: #040714;
-$corTextoPrincipal: silver;
-$corTextoSecundario: #f9f9f9;
-
 body {
-background-color: $corDeFundo;
+    background-color: variaveis.$corDeFundo;
 
 }
+
+.logo-one-piece {
+    max-width: 50vh;
+    margin-left: -90vh;
+}
+
+.logo-one-piece-text{
+    max-width: 32vh;
+    margin-left: -80vh;
+}
+
 @mixin text($fontSize: 16px) {
-font-size: $fontSize;
-line-height: $fontSize + 10px;
-color: $corTextoPrincipal;
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
 }
 
 @mixin title($fontSize: 40px) {
     @include text($fontSize);
-    color: $corTextoSecundario
+    color: variaveis.$corTextoSecundario
 }
 
 .text--big {
@@ -39,7 +47,7 @@ color: $corTextoPrincipal;
 
 .link-text {
     @include text(18px);
-    color: $corTextoSecundario;
+    color: variaveis.$corTextoSecundario;
     text-decoration: underline;
 }
 

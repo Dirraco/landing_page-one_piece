@@ -1,3 +1,19 @@
-.hero {
+@use 'variaveis';
 
+.hero {
+    padding: 5.6vw;
+    margin-top: 6vh;
+    min-height: 80vh;
+    max-width: 76vh;
+    margin-left: 80vh;
+    background-image: url(../images/onepiece/wpp/bando_chapeu_de_palha.jpeg);
+    background-size: cover;
+
+    &__content {
+        max-width: 640px;
+        &__branding {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+    }
 }
