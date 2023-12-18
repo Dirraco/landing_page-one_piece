@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 .hero {
-    padding: 5.6vw;
+    padding: 5.6%;
     margin-top: 6vh;
     min-height: 80vh;
     max-width: 76vh;
@@ -16,4 +16,60 @@
             margin: 0 auto;
         }
     }
+
+    @media (max-width: 768px) {
+        display: block;
+        padding: 0%;
+        margin-top: 15%;
+        height: 2%;
+        max-width: 95%;
+        margin-left: 2.5%;
+        background-image: url(../images/onepiece/wpp/bando_chapeu_de_palha.jpeg);
+        background-size: cover;
+        
+        &__content {
+            max-width: 768px;
+            &__branding {
+                text-align:end;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            .logo-one-piece {
+                width: 100%;
+                margin-top: -100%;
+            }
+        }
+    }
+
+
+    @media (min-width: 769px) and (max-width:1300px){
+        .logo-one-piece {
+            max-width: 80%;
+            margin-left: -50vh;
+            margin-top: -18%;
+        }
+
+        .logo-one-piece-text {
+            max-width: 80%;
+            margin-left: -50vh;
+        }
+
+        display: block;
+        max-width: 64%;
+        margin-left: 35%;
+        background-image: url(../images/onepiece/wpp/bando_chapeu_de_palha.jpeg);
+        background-size: cover;
+
+        &__content {
+            max-width: 340px;
+            &__branding {
+                max-width: 320px;
+                margin: 0 auto;
+            }
+        }
+    }
 }
+
+
+
