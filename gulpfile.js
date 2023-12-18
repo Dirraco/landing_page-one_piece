@@ -8,7 +8,7 @@ function styles () {
         .pipe(gulp.dest('./dist/css'));
 }
 
-function imagemin () {
+function images () {
     return gulp.src('./src/images/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images'));
