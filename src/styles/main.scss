@@ -1,5 +1,7 @@
 @use 'variaveis';
 @use 'hero';
+@use 'shows';
+@use 'faq';
 
 * {
     margin: 0;
@@ -61,4 +63,8 @@ body {
 
 .title--small {
     @include title(28px);
+}
+
+.title-img-persornagem {
+    text-align: center;
 }
