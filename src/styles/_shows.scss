@@ -42,3 +42,21 @@
         }
     }
 }
+
+.recompensas__img {
+    width: 90%;
+    height: 80%;
+    padding-top: -50px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.recompensas{
+    text-align: center;
+    height: 210vh;
+    gap: 0px;
+}

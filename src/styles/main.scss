@@ -14,14 +14,18 @@ body {
 
 }
 
+ul {
+    list-style-type: none;
+}
+
 .logo-one-piece {
     max-width: 50vh;
     margin-left: -90vh;
 }
 
 .logo-one-piece-text{
-    max-width: 32vh;
-    margin-left: -80vh;
+    max-width: 37vh;
+    margin-left: -85vh;
 }
 
 @mixin text($fontSize: 16px) {
